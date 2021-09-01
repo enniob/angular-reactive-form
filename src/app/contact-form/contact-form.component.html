@@ -1,0 +1,19 @@
+<div>
+  <form [formGroup]="contactForm" (ngSubmit)="save()">
+    <p>
+      Name:
+      <input type="text" formControlName="name">
+    </p>
+    <p>
+      Email:
+      <input type="text" formControlName="email">
+    </p>
+    <p>
+      Message:
+      <input type="text" formControlName="message">
+    </p>
+    <p>
+      <button type="submit">Save</button>
+    </p>
+  </form>
+</div>
