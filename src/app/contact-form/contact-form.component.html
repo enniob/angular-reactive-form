@@ -12,7 +12,7 @@
       Phone Number:
       <input type="text" formControlName="phoneNumber">
       <br/>
-      <span class="error" *ngIf="phoneNumber.errors.invalidNumber">
+      <span class="error" *ngIf="phoneNumber.errors?.invalidNumber">
         Invalid phone number
       </span>
     </p>
