@@ -22,7 +22,7 @@ export class ContactFormComponent implements OnInit {
       email: this.fb.control('', Validators.compose([Validators.required])),
       phoneNumber: this.fb.control(
         '',
-        Validators.compose([Validators.required])
+        Validators.compose([Validators.required, this.phoneNumberValidator])
       ),
       message: this.fb.control('', Validators.compose([Validators.required]))
     });
